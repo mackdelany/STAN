@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <script src="https://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/d3-simple-slider"></script>
+      <script src="https://cdn.jsdelivr.net/jstat/latest/jstat.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  </head>
+
+
+  <body>
+
+    <div class="index-wrapper">
+
+      <div id="stan-title">
+          <img src="/static/stan_logo_square.svg">
+          <br>
+      </div>
+
+      <div id="react_slider_test"></div>
+      
+      <!-- Select button: Chief Presenting Complaint -->
+      <div id="cpc-and-request-code-div">
+
+        <div id="cpc-title">
+          <br>
+            <h3>What happened to the patient?</h3>
+              <textarea id="triage-assessment" name="triage-assessment" rows="3" cols="40" style="align-content:left"></textarea>
+        </div>
+
+          <p>What is the chief presenting complaint?</p>
+          <select id="cpc-button"></select>
+          <br><br>
+          <button type="button" onclick="predictOnPage()">PREDICT</button>
+          <button type="button" onclick="predictOnPage()">PREDICT</button>
+          <br><br>
+          <button type="button" onclick="templateOnPage('predict-testing')">PREDICT in EDaag template</button>
+          <button type="button" onclick="templateOnPage('triage-testing')">TRIAGE in EDaag template</button>
+          <br><br>
+          <button type="button" onclick="templateNewPage('predict-testing')">PREDICT in new tab</button>
+          <button type="button" onclick="templateNewPage('triage-testing')">TRIAGE in new tab</button>
+          <br><br>
+
+          <br><br>
+          <button type="button" onclick="refreshPage()">Reset defaults</button>
+        <br><br>
+
+        <div>
+            <p id="triage-code-prediction">Predicted Triage Code: </p>
+            <p id="early-warning-score"></p>
+        </div>
+        <br><br>
+      </div>
+            
+      <div id="triage-graph"></div>
+
+      <div id="triage-rule-table-div">
+        <table id="triage-rule-table"></table>
+      </div>
+      
+      
+
+      <div id="triage-rules"></div>
+
+      <div id="gender-button">
+        <!-- Radio button: Gender -->
+        <div>
+          <h3>Gender</h3>
+        </div>
+        <div class="md-radio" id="genderButton">
+          <input type="radio" name="gender" value="M"> Male<br>
+          <input type="radio" name="gender" value="F"> Female<br>
+          <input type="radio" name="gender" value="U" checked="checked"> Unknown<br>
+        </div>
+        <br>
+      </div>
+      
+      
+      <div id="airway-button">
+        <!-- Radio button: Airway -->
+        <div>
+          <h3>Airway</h3>
+        </div>
+        <div class="md-radio" id="airwayButton">
+          <input type="radio" name="airway" value="PATENT" checked="checked"> Normal<br>
+          <input type="radio" name="airway" value="OTHER"> Altered<br>
+        </div>
+        <br>
+      </div>
+
+
+      <div id="breathing-button">
+        <!-- Radio button: Breathing -->
+        <div>
+          <h3>Breathing</h3>
+        </div>
+        <div class="md-radio" id="breathingButton">
+          <input type="radio" name="breathing" value="NO DISTRESS" checked="checked"> Normal<br>
+          <input type="radio" name="breathing" value="OTHER"> Altered<br>
+        </div>
+        <br>
+      </div>
+
+
+      <div id="circulation-button">
+        <!-- Radio button: Circulation -->
+        <div>
+          <h3>Circulation</h3>
+        </div>
+        <div class="md-radio" id="circulationButton">
+          <input type="radio" name="circulation" value="NORMAL" checked="checked"> Normal<br>
+          <input type="radio" name="circulation" value="ALTERED"> Altered<br>
+        </div>
+        <br>
+      </div>
+
+
+      <div id="neurovasc-button">
+        <!-- Radio button: Neurovasc -->
+        <div>
+          <h3>Neurovasc</h3>
+        </div>
+        <div class="md-radio" id="neurovasc">
+          <input type="radio" name="neurovasc" value="INTACT" checked="checked"> Normal<br>
+          <input type="radio" name="neurovasc" value="OTHER"> Altered<br>
+        </div>
+        <br>
+      </div>
+
+      <div id="immunocompromised-button">
+        <!-- Radio button: Immunocompromised -->
+        <div>
+          <h3>Immunocompromised</h3>
+        </div>
+        <div class="md-radio" id="immunocompromised">
+          <input type="radio" name="immunocompromised" value=0 checked="checked"> No<br>
+          <input type="radio" name="immunocompromised" value=1> Yes<br>
+        </div>
+        <br>
+      </div>
+
+
+      <div id="mental-health-button">
+        <!-- Radio button: Mental Health Concerns -->
+        <div>
+          <h3>Does the patient have mental health concerns?</h3>
+        </div>
+        <div class="md-radio" id="mentalhealth">
+          <input type="radio" name="mentalhealth" value="NO" checked="checked"> No<br>
+          <input type="radio" name="mentalhealth" value="DNS"> DNS<br>
+          <input type="radio" name="mentalhealth" value="YES"> Yes<br>
+        </div>
+      </div>
+
+
+      <div id="patient-temperature-slider">
+        <!-- Slider: What is the patient's temperature?-->
+        <div>
+          <h3>What is the patient's temperature?</h3>
+          <div class="row align-items-center">
+            <div class="col-sm-2"><p id="value-temperature"></p></div>
+            <div class="col-sm"><div id="slider-temperature"></div></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="patient-sats-slider">
+        <!-- Slider: What is the patient's oxygen saturation?-->
+        <div>
+          <h3>What is the patient's oxygen saturation?</h3>
+          <div class="row align-items-center">
+            <div class="col-sm-2"><p id="value-sats"></p></div>
+            <div class="col-sm"><div id="slider-sats"></div></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="patient-age-slider">
+        <!-- Slider: How old is the patient?-->
+        <div>
+          <h3>How old is the patient?</h3>
+          <div class="row align-items-center">
+            <div class="col-sm-2"><p id="value-age"></p></div>
+            <div class="col-sm"><div id="slider-age"></div></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="pain-scale-slider">
+        <!-- Slider: Pain-->
+        <div>
+          <h3>What level of pain is the patient in?</h3>
+          <div class="row align-items-center">
+            <div class="col-sm-2"><p id="value-pain"></p></div>
+            <div class="col-sm"><div id="slider-pain"></div></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="disability-slider">
+        <!-- Slider: Disability-->
+        <div>
+            <h3>How conscious is the patient?</h3>
+            <div class="row align-items-center">
+              <div class="col-sm-2"><p id="value-disability"></p></div>
+              <div class="col-sm"><div id="slider-disability"></div></div>
+            </div>
+        </div>
+      </div>
+
+
+      <div id="vital-signs-slider">
+        <!-- Slider: Vital Signs-->
+        <div>
+            <h3>What is the patient's pulse?</h3>
+            <div class="row align-items-center">
+              <div class="col-sm-2"><p id="value-vitalsigns"></p></div>
+              <div class="col-sm"><div id="slider-vitalsigns"></div></div>
+            </div>
+        </div>
+      </div>
+
+
+      <div id="respiratory-rate-slider">
+        <!-- Slider: Respiratory-->
+        <div>
+            <h3>What is the patient's respiratory rate?</h3>
+            <div class="row align-items-center">
+              <div class="col-sm-2"><p id="value-respiratory"></p></div>
+              <div class="col-sm"><div id="slider-respiratory"></div></div>
+            </div>
+        </div>
+      </div>
+
+
+      <div id="blood-pressure-systolic-slider">
+        <!-- Slider: BloodPressure-->
+        <div>
+          <h3>What is the patient's blood pressure (systolic)?</h3>
+          <div class="row align-items-center">
+            <div class="col-sm-2"><p id="value-BloodPressure-systolic"></p></div>
+            <div class="col-sm"><div id="slider-BloodPressure-systolic"></div></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="blood-pressure-diastolic-slider">
+        <!-- Slider: BloodPressure-->
+        <div>
+          <h3>What is the patient's blood pressure (diastolic)?</h3>
+          <div class="row align-items-center">
+            <div class="col-sm-2"><p id="value-BloodPressure-diastolic"></p></div>
+            <div class="col-sm"><div id="slider-BloodPressure-diastolic"></div></div>
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+
+  <!-- Visual functions -->
+  <script src="{{ url_for('static', filename='src/viz/render_code_and_ews.js') }}" charset="utf-8"></script>
+  <script src="{{ url_for('static', filename='src/viz/triage_rules.js') }}" charset="utf-8"></script>
+  <script src="{{ url_for('static', filename='src/viz/triage_rules_edaag_template.js') }}" charset="utf-8"></script>
+  <script src="{{ url_for('static', filename='src/viz/warnings.js') }}" charset="utf-8"></script>
+  <script src="{{ url_for('static', filename='src/viz/graph.js') }}" charset="utf-8"></script>
+
+  <!-- Page state -->
+  <script src="{{ url_for('static', filename='src/state/presenting_complaint.js') }}" charset="utf-8"></script>
+  <script src="{{ url_for('static', filename='src/state/slider.js') }}" charset="utf-8"></script>
+  <script src="{{ url_for('static', filename='src/state/observed_variables.js') }}" charset="utf-8"></script>
+
+  <!-- Requests -->
+  <script src="{{ url_for('static', filename='src/stan_requests.js') }}" charset="utf-8"></script>
+  <script src="{{ url_for('static', filename='src/payload.js') }}" charset="utf-8"></script>
+  
+  </body>
+
+</html>

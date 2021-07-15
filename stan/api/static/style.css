@@ -1,0 +1,419 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+body {
+  background:#FFFCF9;
+  position: absolute;
+  width:100%;
+  font-family: "DM Sans", sans-serif;
+  color: #393E41;
+  text-align: left;
+}
+
+section {
+  background: #FFFCF9;
+  margin:0 auto;
+  padding: 4em;
+  max-width: 800px;
+  h1 {
+    margin: 0 0 2em;
+  }
+}
+  
+h1 {
+    color: #003049;
+    font-family: verdana;
+    font-size: 500%;
+  }
+
+h3 {
+  color: #003049;
+  vertical-align: top; 
+}
+
+
+/*
+
+    css for index page
+
+ */
+
+
+
+#cpc-title {
+  vertical-align: top; 
+}
+
+.index-wrapper {
+    display: grid;
+    border: 20px solid #FFFCF9;
+    grid-template-columns: [c1] 6.67% [c2] 6.67% [c3] 6.67% [c4] 6.67% [c5] 6.67% [c6] 6.67% [c7] 6.67% [c8] 6.67% [c9] 6.67% [c10] 6.67% [c11] 6.67% [c12] 6.67% [c13] 6.67% [c14] 6.67% [c15] 6.67% [end] ;
+    grid-template-rows: [r1] auto [r2] auto [r3] auto [r4] auto [r5] auto [r6] auto [r7] auto [r8] auto [r9] auto  [r10] [end];
+    align-items: stretch;
+}
+
+#stan-title {
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#cpc-and-request-code-div {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#triage-graph {
+    grid-column-start: 6;
+    grid-column-end: 15;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#triage-rule-table-div {
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+table th, table td{
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid black;
+    padding: 12px;
+ }
+
+#triage-rule-table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+.triage-table-header {
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.triage-table-code-cell {
+    font-size: 30px;
+    text-align: center;
+}
+
+.triage-table-rule-cell {
+    font-style: normal;
+}
+
+
+#triage-rules {
+    grid-column-start: 1;
+    grid-column-end: 15;
+    grid-row-start: 9;
+    grid-row-end: 10;
+}
+
+
+#airway-button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#breathing-button {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#circulation-button {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#neurovasc-button {
+    grid-column-start: 13;
+    grid-column-end: 15;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+
+
+#gender-button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#immunocompromised-button {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#mental-health-button {
+    grid-column-start: 9;
+    grid-column-end: 16;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    align-self: start;
+}
+
+#patient-age-slider { 
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+#pain-scale-slider { 
+    grid-column-start: 6;
+    grid-column-end: 11;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+#disability-slider {
+    grid-column-start: 11;
+    grid-column-end: 16;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+
+#vital-signs-slider {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+#respiratory-rate-slider {
+    grid-column-start: 6;
+    grid-column-end: 11;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+#blood-pressure-systolic-slider {
+    grid-column-start: 11;
+    grid-column-end: 16;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+#blood-pressure-diastolic-slider {
+    grid-column-start: 11;
+    grid-column-end: 16;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+
+
+#patient-temperature-slider {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+
+#patient-sats-slider {
+    grid-column-start: 6;
+    grid-column-end: 11;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+
+
+
+
+
+
+/*
+
+    css for edaag template
+
+ */
+
+
+ .edaag-wrapper {
+    display: grid;
+    width: 1600px;
+    height: 900px;
+    grid-template-columns: [c1] 50px [c2] 300px [c3] 300px [c4] 300px [c5] 300px [c6] 300px [c7] 50px [end];
+    grid-template-rows: [r1] auto [r2] auto [r3] auto [r4] auto [end];
+    align-items: center;
+    grid-row-gap: 20px;
+    margin-top: 10px;
+}
+
+#triage-code-number {
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#triage-code-div {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#triage-code-div-warnings {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#triage-graph-template {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    position: center;
+    margin: auto;
+    padding: 10px;
+}
+
+#triage-graph-template-warnings {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: center;
+    margin: auto;
+    padding: 10px;
+}
+
+#warnings-template {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    background-color: whitesmoke;
+    max-width: 350px;
+    border: 3px solid black;
+}
+
+#relevant-indicators-title {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+    margin: auto;
+}
+
+#triage-rules-template {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+#discretion-notice {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
+}
+
+table {
+    border: 3px solid black;
+    padding: 12px;
+    width: 1500px;
+    position: center;
+}
+
+th {
+    display: table-cell;
+    vertical-align: middle;
+    width: 300px;
+}
+
+td {
+    display: table-cell;
+    vertical-align: top;
+    padding: 8px;
+    width: 300px;
+}
+
+#triage-rules-table-template {
+    border-collapse: collapse;
+    /*border-style: hidden;*/
+}
+
+.triage-header-1 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #e41a1c
+}
+
+.triage-header-2 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ff7f00
+}
+
+.triage-header-3 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #69b3a2
+}
+
+.triage-header-4 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #377eb8
+}
+
+.triage-header-5 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #a65628
+}
+
+.triage-table-code-cell {
+    font-size: 30px;
+    text-align: center;
+}
+
+.triage-table-rule-cell-template {
+    font-style: normal;
+    vertical-align: top;
+}

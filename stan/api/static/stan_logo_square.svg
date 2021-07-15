@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="262px" height="262px" viewBox="0 0 262 262" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard 2a</title>
+    <g id="Artboard-2a" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#D72626" x="0" y="0" width="262" height="262"></rect>
+        <text id="STAN" font-family="Helvetica" font-size="64" font-weight="normal" letter-spacing="6.51999998" fill="#FFFFFF">
+            <tspan x="42" y="215">STA</tspan>
+            <tspan x="181.31" y="215">N</tspan>
+        </text>
+        <path d="M52,93.1096855 L84.2442317,93.1096855 C84.6513535,93.1096855 85.0178331,92.8628715 85.1708811,92.4856124 L108.620082,34.6839805 C108.8277,34.1722063 109.410884,33.9256394 109.922658,34.1332581 C110.176324,34.2361663 110.376713,34.4385648 110.477085,34.6932448 L154.464593,146.305273 C154.667095,146.819094 155.247789,147.071467 155.76161,146.868965 C156.021074,146.766707 156.226048,146.560743 156.327056,146.30079 L176.747076,93.7475068 C176.896481,93.3629947 177.266666,93.1096855 177.679185,93.1096855 L215,93.1096855 L215,93.1096855" id="Line" stroke="#FFFFFF" stroke-width="14" stroke-linecap="square"></path>
+    </g>
+</svg>

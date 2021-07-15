@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <script>
+        $( document ).ready(function() {
+            var triage_code = {{ triage_code|tojson }};
+            var ews_message = {{ ews_message|tojson }};
+            var warnings = {{ warnings|tojson }};
+            var triage_rules_1 = {{ triage_rules_1|tojson }};
+            var triage_rules_2 = {{ triage_rules_2|tojson }};
+            var triage_rules_3 = {{ triage_rules_3|tojson }};
+            var triage_rules_4 = {{ triage_rules_4|tojson }};
+            var triage_rules_5 = {{ triage_rules_5|tojson }};
+            var triage_rules = [
+                triage_rules_1,
+                triage_rules_2,
+                triage_rules_3,
+                triage_rules_4,
+                triage_rules_5,
+            ];
+            if (warnings.length > 0){
+                var triage_code_div = "triage-code-div-warnings"
+                var triage_graph_div = "#triage-graph-template-warnings";
+                var graph_height = 300;
+                prepareGraph(triage_graph_div, graph_height);
+                renderCodeAndEws(triage_code_div, triage_code, ews_message)
+                renderWarnings(warnings);
+            } else {
+                var triage_code_div = "triage-code-div"
+                var triage_graph_div = "#triage-graph-template";
+                var graph_height = 400;
+                prepareGraph(triage_graph_div, graph_height);
+                renderCodeAndEws(triage_code_div, triage_code, ews_message)
+            }
+            var prediction_distribution = {{ prediction_distribution|tojson }};
+            buildGraph(prediction_distribution, triage_code);
+            triageRuleTableEdaag(triage_rules);
+        };
+    </script>
+</head>
+
+<body>
+
+    <div class="edaag-wrapper" id="stan-wrapper">
+
+        <div id="triage-code-div"></div>
+        <div id="triage-code-div-warnings"></div>
+
+        <div id="triage-graph-template"></div>
+        <div id="triage-graph-template-warnings"></div>
+
+        <div id="triage-rules-template"></div>
+
+        <div id="discretion-notice">
+            <p>STAN is a tool to help make a triage code allocation. Discretion and judgement should be used in all situations.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

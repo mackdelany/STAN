@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="362px" height="143px" viewBox="0 0 362 143" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard 2b</title>
+    <g id="Artboard-2b" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#D72626" x="0" y="0" width="362" height="143"></rect>
+        <path d="M36,74.923001 L51.8688083,74.923001 C52.2846723,74.923001 52.6571302,74.6656257 52.804193,74.2766329 L64.0077043,44.642445 C64.2030098,44.1258463 64.7801221,43.8653866 65.2967208,44.0606921 C65.5682131,44.1633326 65.7817157,44.3788667 65.8817805,44.6513187 L87.0726029,102.348723 C87.2630076,102.867148 87.8376275,103.133061 88.3560526,102.942656 C88.6331084,102.8409 88.8510614,102.62195 88.9515508,102.344432 L98.6420562,75.5825334 C98.7853943,75.186682 99.1613087,74.923001 99.5823124,74.923001 L118,74.923001 L118,74.923001" id="Line" stroke="#FFFFFF" stroke-width="10" stroke-linecap="square"></path>
+        <text id="STAN" font-family="Helvetica" font-size="64" font-weight="normal" letter-spacing="6.51999998" fill="#FFFFFF">
+            <tspan x="138" y="95">STA</tspan>
+            <tspan x="277.31" y="95">N</tspan>
+        </text>
+    </g>
+</svg>
