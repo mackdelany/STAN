@@ -1,0 +1,45 @@
+version: "3.8"
+
+services:
+
+  nginx:
+    image: $STAN_NGINX_IMAGE
+    ports:
+      - 80:80
+      - 443:443
+    depends_on: 
+      - web
+
+  web:
+    image: $STAN_OCTOPUS_IMAGE
+    command: gunicorn wsgi:app --bind 0.0.0.0:8080
+    depends_on:
+      - "redis"
+    expose:
+      - 8080
+      - 8081
+    env_file: 
+      .env
+    restart: "no"
+    stop_grace_period: 10s
+
+  redis:
+    image: redis
+    env_file:
+      - ".env"
+    ports:
+      - "6379"
+    restart: "no"
+
+  worker:
+    image: $STAN_OCTOPUS_IMAGE
+    command: celery -A stan.api.celery worker --loglevel=info
+    user: stan
+    depends_on:
+      - "redis"
+    restart: "no"
+    env_file: 
+      .env
+
+volumes:
+  redis: {}

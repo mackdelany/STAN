@@ -1,0 +1,96 @@
+version: 0.2
+
+env:
+  variables:
+    APP_CONFIG_FILE: /stan/api/config/production.py
+    STAN_MODEL_PATH: s3://stanone/models
+    LOCAL_MODEL_PATH: stan/model/saved
+    STAN_REPO: https://mackdelany@bitbucket.org/stantriage/stan.git
+    STAN_ECR_URI: 826342473509.dkr.ecr.ap-southeast-2.amazonaws.com/stan_octopus
+    NGINX_ECR_URI: 826342473509.dkr.ecr.ap-southeast-2.amazonaws.com/stan_nginx
+
+
+  git-credential-helper: yes
+
+proxy:
+    upload-artifacts: no
+    logs: no
+            
+phases:
+
+  install:
+    runtime-versions:
+      docker: 19
+      python: 3.8
+
+    commands:
+
+      - echo Checking files are downloaded...
+      - echo `ls`
+
+      - echo Starting install `date` in `pwd`
+
+  pre_build:
+    commands:
+
+      - echo Getting latest pip...
+      - pip install --upgrade pip
+
+      - echo Installing awscli...
+      - pip install --upgrade awscli
+
+      - echo Installing requirements.txt
+      - pip install --no-cache-dir -r requirements.txt
+
+      - echo Logging into Amazon ECR...
+      - $(aws ecr get-login --no-include-email --region ap-southeast-2)
+
+      - echo Downloading models from S3...
+      - aws s3 cp $STAN_MODEL_PATH $LOCAL_MODEL_PATH --recursive
+
+      - echo Checking model dir
+      - ls $LOCAL_MODEL_PATH 
+      - cd && ls && cd -
+
+
+  build:
+    commands:
+    
+      - echo checking path 
+      - pwd
+
+      - echo checking dir 
+      - ls 
+
+      - echo Running pytest
+      - python -m pytest
+    
+      - echo Build started on `date` 
+      - echo Building the Docker image...
+      
+      - docker build . -t stan_octopus
+      
+      - docker build ./nginx/ -t stan_nginx
+      
+  post_build:
+    commands:
+
+      - chmod +x ./shell/api_test.sh
+      - chmod +x ./shell/integration_tests.sh
+      - ./shell/integration_tests.sh
+
+      - docker tag stan_octopus:latest $STAN_ECR_URI:latest
+      - docker push $STAN_ECR_URI:latest
+
+      - docker tag stan_nginx:latest $NGINX_ECR_URI:latest
+      - docker push $NGINX_ECR_URI:latest
+
+      - echo Build completed on `date` 
+      - echo pushing to repo
+
+      - docker push $STAN_ECR_URI:latest 
+
+
+artifacts:
+  files:
+    - docker-compose.yml
