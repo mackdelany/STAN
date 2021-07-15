@@ -1,0 +1,45 @@
+{
+    "name": "My API test",
+    "testCases": {
+      "check_payload_keys_are_correct": {
+        "path": "/predict?Hospital=testing&DOB=1993-09-15&DHB=testing&PresentingComplaint=Anxiety",
+        "method": "GET",
+        "expect": {
+            "body": {
+                "hasKey": [
+                    "triage_rules", 
+                    "triage_code", 
+                    "warnings", 
+                    "prediction_distribution",
+                    "early_warning_score"
+                ]
+            }
+        }
+      },
+      "check_mental_health_pathway_warning": {
+        "path": "/predict?Hospital=testing&DOB=1993-09-15&DHB=testing&PresentingComplaint=Anxiety",
+        "method": "GET",
+        "expect": {
+            "body": {
+                "contains": {"warnings": ["Consider mental health pathway"]}
+            }
+        }
+      },
+      "check_warning_message_for_missing_fields": {
+        "path": "/predict?PresentingComplaint=Cardiac",
+        "method": "GET",
+        "expect": {
+            "body": {
+                "contains": {
+                    "error_type": "EmptyRequiredFieldError",
+                    "message": "Hospital, DHB, DOB, not in request. Hospital, DHB, DOB, are required fields for a PREDICT request."
+                }
+            }
+        }
+      }
+    },
+    "url": "0.0.0.0:80",
+    "header": {
+        "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+    }
+  }

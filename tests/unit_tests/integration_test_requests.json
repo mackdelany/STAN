@@ -1,0 +1,64 @@
+{
+    "request_1" : 
+    {
+        "Hospital": "pytest",
+        "DHB": "pytest", 
+        "DOB": "1980-1-18 00:00:00.000", 
+        "Gender": "M", 
+        "PresentingComplaint": "Altered mental state/confusion", 
+        "PresentDateTime": "2020-1-18 16:23:00.000+00",
+        "Airway": "PATENT",
+        "Breathing": "NO DISTRESS",
+        "CirculatorySkin": "NORMAL",
+        "DisabilityValue": "A",
+        "RespiratoryRate": 16,
+        "VitalSignsPulse": 78,
+        "PainScale": 0,
+        "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+    },
+
+    "request_2" : 
+    {
+        "Hospital": "pytest", 
+        "DHB": "pytest", 
+        "DOB": "2000-1-18 00:00:00.000", 
+        "Gender": "M", 
+        "PresentingComplaint": "Chest pain", 
+        "PresentDateTime": "2020-1-18 16:27:00.000+00", 
+        "MentalHealthConcerns": "NO", 
+        "PainScale": 7, 
+        "RespiratoryRate": 21,
+        
+        "EventIdentifier": "69_event_id_test",
+        "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+    },
+
+    "request_3" : 
+    {
+        "Hospital": "pytest", 
+        "DHB": "pytest", 
+        "DOB": "1960-1-18 00:00:00.000", 
+        "Gender": "F", 
+        "PresentingComplaint": "Toxic inhalation injury", 
+        "PresentDateTime": "2020-1-18 16:28:00.000+00", 
+        "Breathing": "OTHER", 
+        "VitalSignsPulse": 120,
+        "NurseTriageCode": 3,
+        "EventIdentifier": "42_event_id_test",
+        "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+    },
+
+    "request_4" : 
+    {
+        "Hospital": "pytest", 
+        "DHB": "pytest", 
+        "DOB": "1960-1-18 00:00:00.000", 
+        "Gender": "M", 
+        "PresentingComplaint": "Cardiac arrest", 
+        "PresentDateTime": "2020-1-18 16:28:00.000+00", 
+        "Breathing": "OTHER", 
+        "VitalSignsPulse": 140,
+        "NurseTriageCode": 2,
+        "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+    }
+}

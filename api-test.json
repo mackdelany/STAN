@@ -1,0 +1,20 @@
+{
+    "name": "My API test",
+    "testCases": {
+      "test_case_1": {
+        "path": "/predict",
+        "method": "POST",
+        "description": "Check API auth",
+        "body": {
+          "TriageAssessment": "Help I've got no authentication"
+        },
+        "header": {
+          "X-per": "1"
+        }
+      }
+    },
+    "url": "https://api.stantriage.com",
+    "header": {
+      "Authorization": "Bearer <ACCESS_TOKEN>"
+    }
+  }

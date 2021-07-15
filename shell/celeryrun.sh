@@ -1,0 +1,1 @@
+celery -A stan.api.celery worker --loglevel=info

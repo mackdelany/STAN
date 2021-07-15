@@ -1,0 +1,138 @@
+{
+    "Sepsis" : 
+    {
+        "Request": {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "1980-1-18 00:00:00.000", 
+            "Gender": "M", 
+            "PresentingComplaint": "Altered mental state/confusion", 
+            "PresentDateTime": "2020-1-18 16:23:00.000+00",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "CirculatorySkin": "NORMAL",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 22,
+            "VitalSignsPulse": 104,
+            "Temperature": 39,
+            "PainScale": 0,
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "StringToCheck": "SEPSIS INDICATORS"
+    },
+
+    "ChestPain" : 
+    {
+        "Request": {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "1980-1-18 00:00:00.000", 
+            "Gender": "M", 
+            "PresentingComplaint": "Chest pain", 
+            "PresentDateTime": "2020-1-18 16:23:00.000+00",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "CirculatorySkin": "NORMAL",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 17,
+            "VitalSignsPulse": 77,
+            "Temperature": 37,
+            "PainScale": 0,
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "StringToCheck": "Consider chest pain pathway"
+    },
+
+    "MentalHealth" : 
+    {
+        "Request": {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "1990-1-18 00:00:00.000", 
+            "Gender": "F", 
+            "PresentingComplaint": "Overdose of drug", 
+            "PresentDateTime": "2020-1-18 16:23:00.000+00",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "CirculatorySkin": "NORMAL",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 17,
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "StringToCheck": "Consider mental health pathway"
+    },
+
+    "Neutropenic" : 
+    {
+        "Request": {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "1990-1-18 00:00:00.000", 
+            "Gender": "F", 
+            "PresentingComplaint": "Overdose of drug", 
+            "PresentDateTime": "2020-1-18 16:23:00.000+00",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "CirculatorySkin": "NORMAL",
+            "DisabilityValue": "A",
+            "Immunocompromised": true,
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "StringToCheck": "Consider neutropenic pathway."
+    },
+
+    "Asthma" : 
+    {
+        "Request": {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "1970-1-18 00:00:00.000", 
+            "Gender": "F", 
+            "PresentingComplaint": "Shortness of breath", 
+            "PresentDateTime": "2020-1-18 16:23:00.000+00",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "CirculatorySkin": "NORMAL",
+            "DisabilityValue": "A",
+            "Immunocompromised": true,
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "StringToCheck": "Consider asthma adult pathway"
+    },
+
+    "HipFracture" : 
+    {
+        "Request": {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "1975-1-18 00:00:00.000", 
+            "Gender": "M", 
+            "PresentingComplaint": "Injury of hip", 
+            "PresentDateTime": "2020-1-18 16:23:00.000+00",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "CirculatorySkin": "NORMAL",
+            "DisabilityValue": "A",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "StringToCheck": "Consider hip fracture pathway"
+    },
+
+    "PaediatricOncology" : 
+    {
+        "Request": {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "2005-1-18 00:00:00.000", 
+            "Gender": "M", 
+            "PresentingComplaint": "Injury of hip", 
+            "PresentDateTime": "2020-1-18 16:23:00.000+00",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "CirculatorySkin": "NORMAL",
+            "Immunocompromised": true,
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "StringToCheck": "Consider paediatric oncology pathway"
+    }
+}

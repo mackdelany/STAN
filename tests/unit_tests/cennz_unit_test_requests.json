@@ -1,0 +1,543 @@
+{
+    "Adult_01" : 
+    {
+        "Summary" : "23 y/o F pregnant and bleeding",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "1994-1-18 00:00:00.000", 
+            "Gender": "F", 
+            "PresentingComplaint": "Pregnancy problem", 
+            "PresentDateTime": "2020-1-18 18:23:00.000",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "CirculatorySkin": "NORMAL",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 16,
+            "VitalSignsPulse": 78,
+            "PainScale": 0,
+            "TriageAssessment": "12 weeks pregnant and has had some spotting since this morning. This increased to bright red bleeding today. She has not passed any clots. Changed pad once today.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 4,
+        "EWS": {
+            "Type": "MEWS",
+            "Estimated": 0
+        }
+    },
+
+    "Adult_02" : 
+    {
+        "Summary" : "82 y/o F collapse",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "1940-1-18 00:00:00.000", 
+            "Gender": "F", 
+            "PresentingComplaint": "Collapse/syncope", 
+            "PresentDateTime": "2020-1-18 18:23:00.000",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "CirculatorySkin": "ALTERED",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 20,
+            "VitalSignsPulse": 148,
+            "BloodPressure": "90/50",
+            "PainScale": 0,
+            "TriageAssessment": "Elderly in wheelchair. Been unwell for 2 days. nauseous and vomited today. Collapsed when getting up for tea and was unresponsive for two minutes. On digoxin, warfarin and frusemide. Type 2 diabetic with congestive heart failure.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 2,
+        "EWS": {
+            "Type": "EWS",
+            "Estimated": 12
+        }
+    },
+
+    "Adult_03" : 
+    {
+        "Summary" : "70 y/o F breathless with fever",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "1950-1-18 00:00:00.000", 
+            "Gender": "F", 
+            "PresentingComplaint": "Fever symptoms", 
+            "PresentDateTime": "2020-1-18 12:50:00.000",
+            "Airway": "PATENT",
+            "Breathing": "OTHER",
+            "CirculatorySkin": "ALTERED",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 28,
+            "VitalSignsPulse": 120,
+            "Temperature": 38.5,
+            "BloodPressure": "145/90",
+            "PainScale": 6,
+            "TriageAssessment": "Breathless elderly with fever. 24 hours. Had a productive cough with green sputum. With daughter. Type 2 diabetic. On aspirin, cilazapril, metformin.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 2,
+        "EWS": {
+            "Type": "EWS",
+            "Estimated": 6
+        }
+    },
+
+    "Adult_04" : 
+    {
+        "Summary" : "35 y/o F breathless with fever",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "1985-1-18 00:00:00.000", 
+            "Gender": "F", 
+            "PresentingComplaint": "Shortness of breath", 
+            "PresentDateTime": "2020-1-18 06:10:00.000",
+            "Airway": "PATENT",
+            "Breathing": "OTHER",
+            "CirculatorySkin": "ALTERED",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 36,
+            "VitalSignsPulse": 135,
+            "PainScale": 0,
+            "TriageAssessment": "In ambulance with shortness of breath. Asthmatic. Given nebulised salbutamol with little effect. Unwell with respiratory tract infection for the past two days. Wheezy overnight but gotten worse. Had two previous ICU admissions last year. On fluticasone propionate )flixotide) and salbutamol.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 1,
+        "EWS": {
+            "Type": "EWS",
+            "Estimated": 13
+        }
+    },
+
+    "Adult_05" : 
+    {
+        "Summary" : "45 y/o M non bleeding laceration to hand",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "1975-1-18 00:00:00.000", 
+            "Gender": "M", 
+            "PresentingComplaint": "Injury of upper limb", 
+            "PresentDateTime": "2020-1-18 14:10:00.000",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "CirculatorySkin": "NORMAL",
+            "NeuroAssessment": "OTHER",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 18,
+            "VitalSignsPulse": 68,
+            "PainScale": 3,
+            "TriageAssessment": "Builder who cut his hand. With workmate. Using an electric saw to cut pork and slipped. 4 centimetre laceration across the dorsum of his hand just proximal to the second metacarpal head. It is not bleeding.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 4,
+        "EWS": {
+            "Type": "EWS",
+            "Estimated": 0
+        }
+    },
+
+    "Adult_06" : 
+    {
+        "Summary" : "31 y/o F sore stomach, diarrhoea and vomiting",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "1988-1-18 00:00:00.000", 
+            "Gender": "F", 
+            "PresentingComplaint": "Nausea/vomiting/diarrhoea", 
+            "PresentDateTime": "2020-1-18 23:30:00.000",
+            "Airway": "PATENT",
+            "Breathing": "NORMAL",
+            "CirculatorySkin": "NORMAL",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 16,
+            "VitalSignsPulse": 88,
+            "PainScale": 3,
+            "TriageAssessment": "She's had a sore stomach, diarrhoea and vomiting. Sudden onset of symptoms at midday. Hasn't vomited for the past two hours but continues to have diarrhoea. Tolerating small sips of fluid. On oral contreceptive pill.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 4,
+        "EWS": {
+            "Type": "EWS",
+            "Estimated": 0
+        }
+    },
+
+    "Adult_07" : 
+    {
+        "Summary" : "68 y/o M collapse",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "1952-1-18 00:00:00.000", 
+            "Gender": "M", 
+            "PresentingComplaint": "Collapse/syncope", 
+            "PresentDateTime": "2020-1-18 13:30:00.000",
+            "Airway": "PATENT",
+            "Breathing": "NORMAL",
+            "CirculatorySkin": "ALTERED",
+            "NeuroAssessment": "INTACT",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 16,
+            "VitalSignsPulse": 56,
+            "PainScale": 0,
+            "TriageAssessment": "In ambulance. Collapsed in mall with wife. Wife says he complained of feeling dizzy then fell to ground. Was unconcious for a few seconds. Ray had no chest pain or headache prior to collapse. Felt well prior to going to supermarket. On digoxin, frusemide, potassium supplements. Has spray for his heart that uses occasionally. Histroy of heart problems.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 3,
+        "EWS": {
+            "Type": "EWS",
+            "Estimated": 0
+        }
+    },
+
+    "Adult_08" : 
+    {
+        "Summary" : "48 y/o M plaster dust in eye",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "1972-1-18 00:00:00.000", 
+            "Gender": "M", 
+            "PresentingComplaint": "Foreign body in eye", 
+            "PresentDateTime": "2020-1-18 08:30:00.000",
+            "Airway": "PATENT",
+            "Breathing": "NORMAL",
+            "CirculatorySkin": "NORMAL",
+            "NeuroAssessment": "INTACT",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 16,
+            "VitalSignsPulse": 72,
+            "PainScale": 0,
+            "TriageAssessment": "Was stripping wallpaper with lots of plaster dust which might have gone in eye. Right eye feel uncomfortable. Red and watering slightly. Says no change to vision.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 4,
+        "EWS": {
+            "Type": "EWS",
+            "Estimated": 0
+        }
+    },
+
+    "Adult_09" : 
+    {
+        "Summary" : "45 y/o F headache",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "1975-1-18 00:00:00.000", 
+            "Gender": "F", 
+            "PresentingComplaint": "Headache", 
+            "PresentDateTime": "2020-1-18 08:30:00.000",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "CirculatorySkin": "NORMAL",
+            "NeuroAssessment": "INTACT",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 20,
+            "VitalSignsPulse": 102,
+            "PainScale": 6,
+            "TriageAssessment": "In wheelchair clutching vomit bowl. Has migraine gotten worse over last 12 hours. Had paracetomol three hours ago but doesn't help. Similar to usual migraines for her. Has been vomiting with some visual disturbance. History of migraines and depression.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 3,
+        "EWS": {
+            "Type": "EWS",
+            "Estimated": 1
+        }
+    },
+
+    "Adult_10" : 
+    {
+        "Summary" : "21 y/o F multiple injuries in crash",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "1999-1-18 00:00:00.000", 
+            "Gender": "F", 
+            "PresentingComplaint": "Multiple injuries - major", 
+            "PresentDateTime": "2020-1-18 20:30:00.000",
+            "Airway": "PATENT",
+            "Breathing": "OTHER",
+            "CirculatorySkin": "ALTERED",
+            "NeuroAssessment": "INTACT",
+            "DisabilityValue": "P",
+            "RespiratoryRate": 32,
+            "VitalSignsPulse": 142,
+            "TriageAssessment": "Car vs tree open road. Head and chest injuries. Cervical collar in situ. Full spinal immobilisation. Forehead contusion. Brusing on forehead and chest.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 1,
+        "EWS": {
+            "Type": "EWS",
+            "Estimated": 16
+        }
+    },
+
+    "Paediatric_01" : 
+    {
+        "Summary" : "4 y/o M laceration to top lip",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "2016-1-18 00:00:00.000", 
+            "Gender": "M", 
+            "PresentingComplaint": "Injury of face", 
+            "PresentDateTime": "2020-1-18 20:30:00.000",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "CirculatorySkin": "NORMAL",
+            "NeuroAssessment": "INTACT",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 22,
+            "VitalSignsPulse": 92,
+            "PainScale": 3,
+            "TriageAssessment": "Collided with another child while running outside. No loc. 3 centimetre laceration above his top lip. Some swelling. Oozing slightly under the dressing the day care applied.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 4,
+        "EWS": {
+            "Type": "PEWS",
+            "Estimated": 0
+        }
+    },
+
+    "Paediatric_02" : 
+    {
+        "Summary" : "9 y/o F injury to elbow",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "2011-1-18 00:00:00.000", 
+            "Gender": "F", 
+            "PresentingComplaint": "Injury of upper limb", 
+            "PresentDateTime": "2020-1-18 16:17:00.000",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "CirculatorySkin": "NORMAL",
+            "NeuroAssessment": "INTACT",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 22,
+            "VitalSignsPulse": 90,
+            "PainScale": 6,
+            "TriageAssessment": "Arm in sling. Was rollar blading at home and fell over. Mod swelling of elbow.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 3,
+        "EWS": {
+            "Type": "PEWS",
+            "Estimated": 0
+        }
+    },
+
+    "Paediatric_03" : 
+    {
+        "Summary" : "4 y/o M cough",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "2016-4-13 00:00:00.000", 
+            "Gender": "M", 
+            "PresentingComplaint": "Cough", 
+            "PresentDateTime": "2020-1-18 16:17:00.000",
+            "Airway": "OTHER",
+            "Breathing": "OTHER",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 68,
+            "VitalSignsPulse": 178,
+            "TriageAssessment": "Been unwell with coryza and dry cough for past two days. Trouble breathing. Audible inspiratory stridor. Coughed all last night. Couldn't breathe in morning. Improved slightly en route to ED.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 1,
+        "EWS": {
+            "Type": "PEWS",
+            "Estimated": 9
+        }
+    },
+
+    "Paediatric_04" : 
+    {
+        "Summary" : "1 y/o M with head injury",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "2018-7-13 00:00:00.000", 
+            "Gender": "M", 
+            "PresentingComplaint": "Injury of head", 
+            "PresentDateTime": "2020-1-18 16:17:00.000",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 24,
+            "VitalSignsPulse": 96,
+            "PainScale": 0,
+            "TriageAssessment": "Hurt his head. Hit by elder sibling. Did not lose conciousness. Has 2 centimetre laceration to his occiput that is not bleeding and has approximated edges.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 5,
+        "EWS": {
+            "Type": "PEWS",
+            "Estimated": 0
+        }
+    },
+
+    "Paediatric_05" : 
+    {
+        "Summary" : "1 y/o M with fever",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "2019-4-13 00:00:00.000", 
+            "Gender": "M", 
+            "PresentingComplaint": "Fever symptoms", 
+            "PresentDateTime": "2020-1-18 16:17:00.000",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 31,
+            "VitalSignsPulse": 112,
+            "PainScale": 0,
+            "TriageAssessment": "Baby with fever. Unwell w cough since he woke this am. Alert but cries when trying to get pulse. Had bronchiolitis last week but wasn't admitted.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 5,
+        "EWS": {
+            "Type": "PEWS",
+            "Estimated": 0
+        }
+    },
+
+    "Paediatric_06" : 
+    {
+        "Summary" : "4 y/o F seizure (now alert)",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "2016-4-13 00:00:00.000", 
+            "Gender": "F", 
+            "PresentingComplaint": "Seizure", 
+            "PresentDateTime": "2020-1-18 16:17:00.000",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 22,
+            "VitalSignsPulse": 119,
+            "PainScale": 3,
+            "TriageAssessment": "Had seizure lasted 2-3 minutes. Didn't change colour but was unresponsive during. 30 minutes ago. Had fever, coryza, sore throat and cough for 24 hours. Alert now.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 3,
+        "EWS": {
+            "Type": "PEWS",
+            "Estimated": 0
+        }
+    },
+
+    "Paediatric_07" : 
+    {
+        "Summary" : "2 y/o M with head injury",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "2018-1-13 00:00:00.000", 
+            "Gender": "M", 
+            "PresentingComplaint": "Injury of head", 
+            "PresentDateTime": "2020-1-18 16:17:00.000",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "CirculatorySkin": "ALTERED",
+            "DisabilityValue": "V",
+            "RespiratoryRate": 31,
+            "VitalSignsPulse": 140,
+            "PainScale": 0,
+            "TriageAssessment": "Hurt head now sleepy. Unsteady on feet. Fell off table an hour ago, 80 cm height. Had loc for a few minutes. Moderate contusion on right forehead. Has vomited three times since the fall.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 2,
+        "EWS": {
+            "Type": "PEWS",
+            "Estimated": 2
+        }
+    },
+
+    "Paediatric_08" : 
+    {
+        "Summary" : "3 y/o M with diarrhoea and vomitting",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "2017-1-13 00:00:00.000", 
+            "Gender": "M", 
+            "PresentingComplaint": "Nausea/vomiting/diarrhoea", 
+            "PresentDateTime": "2020-1-18 21:17:00.000",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "CirculatorySkin": "ALTERED",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 25,
+            "VitalSignsPulse": 120,
+            "PainScale": 3,
+            "TriageAssessment": "Has diarrhoea and won't drink much. Drinking small amounts of water and less wet nappies. Eight dirty nappies today but unsure when he last passed urine. Vomited two days ago but none since. Appears to be thirsty.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 3,
+        "EWS": {
+            "Type": "PEWS",
+            "Estimated": 0
+        }
+    },
+
+    "Paediatric_09" : 
+    {
+        "Summary" : "4 month M with episode of not breathing",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "2020-4-13 00:00:00.000", 
+            "Gender": "M", 
+            "PresentingComplaint": "Periods of not breathing", 
+            "PresentDateTime": "2020-8-18 17:20:00.000",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 30,
+            "VitalSignsPulse": 120,
+            "PainScale": 0,
+            "TriageAssessment": "Been unsettled today had sleep at 4pm. Mother checked on him 30 minutes later and he was unresponsive, pale, grey and not breathing. Did cpr and he started breathing. Now awake and crying but easily consoled. Has had a runny nose for two days. Had previous assessment in the paediartric ward for bronchiolitis but was not admitted.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 3,
+        "EWS": {
+            "Type": "PEWS",
+            "Estimated": 0
+        }
+    },
+
+    "Paediatric_10" : 
+    {
+        "Summary" : "9 month F with burn",
+        "Request" : {
+            "Hospital": "pytest",
+            "DHB": "pytest", 
+            "DOB": "2020-1-1 00:00:00.000", 
+            "Gender": "M", 
+            "PresentingComplaint": "Burn", 
+            "PresentDateTime": "2020-8-18 15:17:00.000",
+            "Airway": "PATENT",
+            "Breathing": "NO DISTRESS",
+            "DisabilityValue": "A",
+            "RespiratoryRate": 28,
+            "VitalSignsPulse": 120,
+            "PainScale": 6,
+            "TriageAssessment": "Burns to dorsum of both hands. Mother says she put a pot of water on table and daughter put hands in. Story feels inconsistent. Now crying in pain. Hands have been wrapped in cold wet flannels for twenty minutes. Due her 5 month immunisations.",
+            "Key": "ccef79a2-a8ac-4fdb-983d-a2cc3ec0dff7"
+        },
+        "Code" : 3,
+        "EWS": {
+            "Type": "PEWS",
+            "Estimated": 0
+        }
+    }
+}
